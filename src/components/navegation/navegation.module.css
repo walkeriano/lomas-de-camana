@@ -14,10 +14,10 @@
   width: 90%;
   height: 45%;
   border-radius: 0px 20px 20px 0px;
-  background-color: rgba(255, 255, 255, 0.176);
-  border-right: 1px solid rgba(255, 255, 255, 0.66);
-  border-top: 1px solid rgba(255, 255, 255, 0.66);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.66);
+  background-color: rgba(0, 0, 0, 0.176);
+  border-right: 1px solid rgba(255, 255, 255, 0.433);
+  border-top: 1px solid rgba(255, 255, 255, 0.433);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.433);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,8 +99,8 @@
 }
 
 .btnContact:hover {
-  background-color: rgba(255, 255, 255, 0.176);
-  border: 1px solid rgba(255, 255, 255, 0.66);
+  background-color: rgba(0, 0, 0, 0.176);
+  border: 1px solid rgba(255, 255, 255, 0.433);
   color: white;
 }
 
@@ -128,17 +128,17 @@
   color: green;
 }
 
-.flexButton a .icon{
+.flexButton a .icon {
   font-size: 1.3rem;
 }
 
-.flexButton a:nth-child(1) .icon{
+.flexButton a:nth-child(1) .icon {
   font-size: 1.8rem;
 }
 
 .flexButton a:hover {
-  background-color: rgba(255, 255, 255, 0.176);
-  border: 1px solid rgba(255, 255, 255, 0.66);
+  background-color: rgba(0, 0, 0, 0.176);
+  border: 1px solid rgba(255, 255, 255, 0.433);
   color: white;
 }
 
