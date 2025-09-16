@@ -1,12 +1,26 @@
 import styles from "./terreno.module.css";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationCrosshairs, faPersonDigging, faChevronDown,faExpand, faEarthAmericas } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLocationCrosshairs,
+  faPersonDigging,
+  faChevronDown,
+  faExpand,
+  faEarthAmericas,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Terreno({ id }) {
   return (
     <section id={id} className={styles.generalHero}>
       <section className={styles.titleHero}>
+        <div className={styles.logoNav}>
+          <Image
+            src="/logo-lomas.png"
+            alt="imagen-general"
+            width={200}
+            height={80}
+          />
+        </div>
         <div className={styles.flexTitle}>
           <h3>Detalles del terreno</h3>
           <FontAwesomeIcon icon={faChevronDown} className={styles.icon} />
@@ -17,7 +31,10 @@ export default function Terreno({ id }) {
               <p>Ubicación</p>
               <h4>Av. General 349, Arequipa, Perú.</h4>
             </div>
-            <FontAwesomeIcon icon={faLocationCrosshairs} className={styles.icon} />
+            <FontAwesomeIcon
+              icon={faLocationCrosshairs}
+              className={styles.icon}
+            />
           </section>
           <section className={styles.itemDato}>
             <div>
@@ -40,13 +57,13 @@ export default function Terreno({ id }) {
             </div>
             <FontAwesomeIcon icon={faEarthAmericas} className={styles.icon} />
           </section>
-          
         </section>
       </section>
       <section className={styles.bgHero}>
         <section className={styles.btnImage}>
           <div>
             <p>Vistas generales</p>
+            <FontAwesomeIcon icon={faChevronDown} className={styles.icon} />
           </div>
           <section className={styles.flexOptions}>
             <button>
