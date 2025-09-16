@@ -7,6 +7,14 @@ export default function Beneficios({ id }) {
   return (
     <section id={id} className={styles.generalHero}>
       <section className={styles.titleHero}>
+        <div className={styles.logoNav}>
+          <Image
+            src="/logo-lomas.png"
+            alt="imagen-general"
+            width={200}
+            height={80}
+          />
+        </div>
         <div className={styles.flexTitle}>
           <h3>Detalles de los beneficios</h3>
           <FontAwesomeIcon icon={faChevronDown} className={styles.icon} />
@@ -43,6 +51,7 @@ export default function Beneficios({ id }) {
         <section className={styles.btnImage}>
           <div>
             <p>Vistas generales</p>
+            <FontAwesomeIcon icon={faChevronDown} className={styles.icon} />
           </div>
           <section className={styles.flexOptions}>
             <button>

@@ -15,6 +15,14 @@ export default function Compra({ id }) {
   return (
     <section id={id} className={styles.generalHero}>
       <section className={styles.titleHero}>
+        <div className={styles.logoNav}>
+          <Image
+            src="/logo-lomas.png"
+            alt="imagen-general"
+            width={200}
+            height={80}
+          />
+        </div>
         <h2>
           todo listo para
           <br />
@@ -41,6 +49,7 @@ export default function Compra({ id }) {
         <section className={styles.btnImage}>
           <div>
             <p>reserva una visita guiada</p>
+            <FontAwesomeIcon icon={faChevronDown} className={styles.icon} />
           </div>
           <form action="" className={styles.formContact}>
             <label htmlFor="">

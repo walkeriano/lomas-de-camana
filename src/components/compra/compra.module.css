@@ -29,7 +29,7 @@
   font-weight: 200;
 }
 
-.titleHero h2 span{
+.titleHero h2 span {
   font-weight: 700;
 }
 .flexButton {
@@ -52,17 +52,17 @@
   cursor: pointer;
 }
 
-.flexButton button:hover{
+.flexButton button:hover {
   background-color: white;
   border-color: white;
 }
 
-.flexButton button .icon{
+.flexButton button .icon {
   font-size: 2.3rem;
   color: white;
 }
 
-.flexButton button:hover .icon{
+.flexButton button:hover .icon {
   color: green;
 }
 
@@ -73,8 +73,6 @@
   justify-content: center;
   gap: 5px;
 }
-
-
 
 .flexButton button div h3 {
   color: white;
@@ -92,7 +90,8 @@
   letter-spacing: 1px;
 }
 
-.flexButton button:hover div h3, .flexButton button:hover div p{
+.flexButton button:hover div h3,
+.flexButton button:hover div p {
   color: green;
   border-color: green;
 }
@@ -162,7 +161,7 @@
   justify-content: center;
 }
 
-.formContact label .icon{
+.formContact label .icon {
   color: white;
   font-size: 1.1rem;
   position: absolute;
@@ -187,12 +186,11 @@
   letter-spacing: 1px;
 }
 
-.formContact label:hover{
+.formContact label:hover {
   border: 1px solid white;
 }
 
-
-.formContact button{
+.formContact button {
   padding: 10px 20px;
   border-radius: 50px;
   font-size: 0.9rem;
@@ -209,8 +207,119 @@
   gap: 10px;
 }
 
-.formContact button:hover{
+.formContact button:hover {
   background-color: white;
   border-color: white;
   color: green;
+}
+
+.btnImage div .icon {
+  color: white;
+  font-size: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .titleHero {
+    top: 30px;
+    right: auto;
+    left: 5%;
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+  }
+
+  .titleHero h2 {
+    font-size: 8.8vw;
+    text-align: left;
+    font-weight: 300;
+  }
+
+  .titleHero h2 span {
+    font-weight: 700;
+  }
+
+  .flexButton button {
+    padding: 10px 10px;
+  }
+
+  .flexButton button .icon {
+    font-size: 1.8rem;
+  }
+
+  .flexButton button div {
+    align-items: flex-start;
+  }
+
+  .flexButton button div h3 {
+    font-size: 0.8rem;
+  }
+
+  .flexButton button div p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .generalHero {
+    height: auto;
+  }
+
+  .btnImage {
+    margin-top: 60vh;
+    margin-bottom: 35vh;
+    width: 80%;
+    position: relative;
+    bottom: auto;
+    right: auto;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .btnImage div {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .btnImage div p{
+    font-size: 1.3rem;
+  }
+
+  .formContact {
+    align-items: center;
+    gap: 20px;
+  }
+
+  .formContact label {
+    width: 100%;
+    height: 60px;
+  }
+
+  .formContact button {
+    padding: 15px 25px;
+    font-size: 1rem;
+  }
+
+  .flexButton {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .flexButton button {
+    flex-direction: row-reverse;
+    padding: 10px 10px;
+  }
+
+  .flexButton button .icon {
+    font-size: 1.6rem;
+  }
+
+  .flexButton button div h3 {
+    font-size: 0.7rem;
+    text-align: left;
+  }
+
+  .flexButton button div p {
+    font-size: 0.6rem;
+  }
 }

@@ -61,6 +61,11 @@
   letter-spacing: 1px;
 }
 
+.btnImage div .icon {
+  color: white;
+  font-size: 1rem;
+}
+
 .flexOptions {
   display: flex;
   align-items: center;
@@ -108,7 +113,7 @@
   font-weight: 700;
 }
 
-.flexTitle .icon{
+.flexTitle .icon {
   color: white;
   font-size: 1.1rem;
 }
@@ -130,7 +135,7 @@
   width: 100%;
 }
 
-.itemDato .icon{
+.itemDato .icon {
   color: white;
   font-size: 2.5rem;
 }
@@ -145,7 +150,6 @@
   width: 80%;
 }
 
-
 .itemDato div h4 {
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -153,4 +157,128 @@
   text-align: right;
   line-height: 1.1;
   font-weight: 700;
+}
+
+.logoNav {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .logoNav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .titleHero {
+    top: 30px;
+    right: auto;
+    left: 5%;
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+  }
+
+  .titleHero h3 {
+    font-size: 1.3rem;
+    text-align: left;
+    font-weight: 300;
+  }
+
+  .flexTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .flexTitle h3 {
+    color: white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+
+  .flexTitle .icon {
+    color: white;
+    font-size: 1.1rem;
+  }
+
+  .containerItems {
+    width: 50%;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .itemDato {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+  }
+
+  .itemDato .icon {
+    font-size: 2.3rem;
+  }
+
+  .itemDato div {
+    align-items: flex-start;
+    gap: 10px;
+    width: 80%;
+  }
+
+  .itemDato div p {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .itemDato div h4 {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .btnImage {
+    bottom: 150px;
+    right: 5%;
+  }
+
+  .btnImage div {
+    width: 120px;
+    align-items: flex-end;
+  }
+
+  .btnImage div p {
+    text-align: right;
+  }
+
+  .flexOptions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .flexOptions button {
+    width: 100px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .flexOptions {
+    gap: 15px;
+  }
+
+  .flexOptions button {
+    width: 90px;
+    height: 50px;
+  }
+
+  .btnImage div p {
+    text-align: right;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+  }
+
+  .btnImage {
+    bottom: 110px;
+  }
 }
