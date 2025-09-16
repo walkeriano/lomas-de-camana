@@ -1,5 +1,6 @@
 .generalNav {
   width: 20%;
+  min-width: 250px;
   height: 100vh;
   position: fixed;
   left: 0px;
@@ -152,4 +153,57 @@
   align-items: center;
   justify-content: center;
   padding-left: 10%;
+}
+
+@media (max-width: 1000px) {
+  .generalNav {
+    min-width: 100%;
+    height: 100px;
+    left: 0px;
+    bottom: 0px;
+  }
+
+  .containerNavigation {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    border-right: 0px solid rgba(255, 255, 255, 0.433);
+    border-top: 1px solid rgba(255, 255, 255, 0.433);
+    border-bottom: 0px solid rgba(255, 255, 255, 0.433);
+    flex-direction: row;
+    overflow-y: auto;
+  }
+
+  .containerNavigation::-webkit-scrollbar {
+    height: 0px;
+  }
+
+  .contactChannels {
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 5%;
+  }
+
+  .flexButton {
+    width: auto;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .logoNav {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .generalNav {
+    min-width: 100%;
+    height: 80px;
+  }
+
+  .contactChannels {
+    display: none;
+  }
 }

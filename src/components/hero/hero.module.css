@@ -29,7 +29,7 @@
   font-weight: 200;
 }
 
-.titleHero h1 span{
+.titleHero h1 span {
   font-weight: 700;
 }
 
@@ -53,17 +53,17 @@
   cursor: pointer;
 }
 
-.flexButton button:hover{
+.flexButton button:hover {
   background-color: white;
   border-color: white;
 }
 
-.flexButton button .icon{
+.flexButton button .icon {
   font-size: 2.3rem;
   color: white;
 }
 
-.flexButton button:hover .icon{
+.flexButton button:hover .icon {
   color: green;
 }
 
@@ -74,8 +74,6 @@
   justify-content: center;
   gap: 5px;
 }
-
-
 
 .flexButton button div h3 {
   color: white;
@@ -93,7 +91,8 @@
   letter-spacing: 1px;
 }
 
-.flexButton button:hover div h3, .flexButton button:hover div p{
+.flexButton button:hover div h3,
+.flexButton button:hover div p {
   color: green;
   border-color: green;
 }
@@ -140,11 +139,10 @@
   letter-spacing: 1px;
 }
 
-.btnImage div .icon{
+.btnImage div .icon {
   color: white;
   font-size: 1rem;
 }
-
 
 .flexOptions {
   display: flex;
@@ -176,4 +174,125 @@
 
 .flexOptions button:hover {
   border: 1px solid white;
+}
+
+.logoNav {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .titleHero {
+    top: 30px;
+    right: auto;
+    left: 5%;
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+  }
+
+  .titleHero h1 {
+    font-size: 8.8vw;
+    text-align: left;
+    font-weight: 300;
+  }
+
+  .titleHero h1 span {
+    font-weight: 700;
+  }
+
+  .btnImage {
+    bottom: 150px;
+    right: 5%;
+  }
+
+  .btnImage div {
+    width: 120px;
+    align-items: flex-end;
+  }
+
+  .btnImage div p {
+    text-align: right;
+  }
+
+  .flexOptions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .flexOptions button {
+    width: 100px;
+    height: 60px;
+  }
+
+  .flexButton button {
+    padding: 10px 10px;
+  }
+
+  .flexButton button .icon {
+    font-size: 1.8rem;
+  }
+
+  .flexButton button div {
+    align-items: flex-start;
+  }
+
+  .flexButton button div h3 {
+    font-size: 0.8rem;
+  }
+
+  .flexButton button div p {
+    font-size: 0.7rem;
+  }
+
+  .logoNav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 800px) {
+  .flexButton {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .flexButton button {
+    flex-direction: row-reverse;
+    padding: 10px 10px;
+  }
+
+  .flexButton button .icon {
+    font-size: 1.6rem;
+  }
+
+  .flexButton button div h3 {
+    font-size: 0.7rem;
+    text-align: left;
+  }
+
+  .flexButton button div p {
+    font-size: 0.6rem;
+  }
+
+  .flexOptions {
+    gap: 15px;
+  }
+
+  .flexOptions button {
+    width: 90px;
+    height: 50px;
+  }
+
+  .btnImage div p {
+    text-align: right;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+  }
+
+  .btnImage {
+    bottom: 110px;
+  }
 }

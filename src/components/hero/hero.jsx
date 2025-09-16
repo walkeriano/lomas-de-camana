@@ -1,13 +1,29 @@
 import styles from "./hero.module.css";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faNewspaper, faShieldHalved, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faNewspaper,
+  faShieldHalved,
+  faChevronDown,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Hero({ id }) {
   return (
     <section id={id} className={styles.generalHero}>
       <section className={styles.titleHero}>
-        <h1>Venta segura<br/><span>e inmediata</span></h1>
+        <div className={styles.logoNav}>
+          <Image
+            src="/logo-lomas.png"
+            alt="imagen-general"
+            width={200}
+            height={80}
+          />
+        </div>
+        <h1>
+          Venta segura
+          <br />
+          <span>e inmediata</span>
+        </h1>
         <section className={styles.flexButton}>
           <button>
             <div>
