@@ -122,6 +122,10 @@
   gap: 25px;
 }
 
+.containerItemsTwo {
+  display: none;
+}
+
 .itemDato {
   display: flex;
   align-items: center;
@@ -167,6 +171,10 @@
 .btnImage div .icon {
   color: white;
   font-size: 1rem;
+}
+
+.btnActive {
+  display: none;
 }
 
 @media (max-width: 1000px) {
@@ -268,7 +276,29 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
+  .btnActive {
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 0px 15px;
+    align-items: center;
+    justify-self: center;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.292);
+    backdrop-filter: blur(5px);
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .btnActive:hover{
+    background-color: white;
+    color: green;
+  }
+
   .flexOptions {
     gap: 15px;
   }
@@ -286,5 +316,38 @@
 
   .btnImage {
     bottom: 110px;
+  }
+
+  .containerItems {
+    display: none;
+  }
+
+  .containerItemsTwo {
+    width: 80%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .itemDato .icon {
+    font-size: 2.3rem;
+  }
+
+  .itemDato div {
+    align-items: flex-start;
+    gap: 10px;
+    width: 80%;
+  }
+
+  .itemDato div p {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .itemDato div h4 {
+    font-size: 1rem;
+    text-align: left;
   }
 }

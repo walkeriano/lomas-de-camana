@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import styles from "./terreno.module.css";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,6 +11,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Terreno({ id }) {
+  const [show, setShow] = useState(true);
+
   return (
     <section id={id} className={styles.generalHero}>
       <section className={styles.titleHero}>
@@ -58,6 +61,52 @@ export default function Terreno({ id }) {
             <FontAwesomeIcon icon={faEarthAmericas} className={styles.icon} />
           </section>
         </section>
+        {show ? (
+          <button onClick={()=>setShow(false)} className={styles.btnActive}>ver detalles</button>
+        ) : (
+          <>
+            <section className={styles.containerItemsTwo}>
+              <section className={styles.itemDato}>
+                <div>
+                  <p>Ubicación</p>
+                  <h4>Av. General 349, Arequipa, Perú.</h4>
+                </div>
+                <FontAwesomeIcon
+                  icon={faLocationCrosshairs}
+                  className={styles.icon}
+                />
+              </section>
+              <section className={styles.itemDato}>
+                <div>
+                  <p>Dimensiones</p>
+                  <h4>300 m2</h4>
+                </div>
+                <FontAwesomeIcon icon={faExpand} className={styles.icon} />
+              </section>
+              <section className={styles.itemDato}>
+                <div>
+                  <p>Superficie</p>
+                  <h4>Lista para construir</h4>
+                </div>
+                <FontAwesomeIcon
+                  icon={faPersonDigging}
+                  className={styles.icon}
+                />
+              </section>
+              <section className={styles.itemDato}>
+                <div>
+                  <p>Longitud</p>
+                  <h4>78657465º</h4>
+                </div>
+                <FontAwesomeIcon
+                  icon={faEarthAmericas}
+                  className={styles.icon}
+                />
+              </section>
+            </section>
+            <button  onClick={()=>setShow(true)} className={styles.btnActive}>ocultar</button>
+          </>
+        )}
       </section>
       <section className={styles.bgHero}>
         <section className={styles.btnImage}>

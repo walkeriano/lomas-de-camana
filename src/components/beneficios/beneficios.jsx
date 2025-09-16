@@ -16,7 +16,7 @@ export default function Beneficios({ id }) {
           />
         </div>
         <div className={styles.flexTitle}>
-          <h3>Detalles de los beneficios</h3>
+          <h3>Grandes beneficios</h3>
           <FontAwesomeIcon icon={faChevronDown} className={styles.icon} />
         </div>
         <section className={styles.containerItems}>
