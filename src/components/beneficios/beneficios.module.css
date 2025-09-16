@@ -1,0 +1,156 @@
+.generalHero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.titleHero {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 50%;
+  gap: 30px;
+  z-index: 1;
+}
+
+.bgHero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.bgHero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btnImage {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  bottom: 50px;
+  right: 50px;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.btnImage div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnImage div p {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.flexOptions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.flexOptions button {
+  width: 110px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  filter: drop-shadow(7px 7px 5px #131313d2);
+}
+
+.btnImage button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.flexOptions button:hover {
+  border: 1px solid white;
+}
+
+.flexTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.flexTitle h3 {
+  color: white;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.flexTitle .icon{
+  color: white;
+  font-size: 1.1rem;
+}
+
+.containerItems {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 25px;
+}
+
+.itemDato {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  width: 100%;
+}
+
+.itemDato .icon{
+  color: white;
+  font-size: 2.5rem;
+}
+
+.itemDato div {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  width: 80%;
+}
+
+
+.itemDato div h4 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-align: right;
+  line-height: 1.1;
+  font-weight: 700;
+}
