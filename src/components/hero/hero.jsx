@@ -62,6 +62,18 @@ export default function Hero({ id }) {
             </button>
           </section>
         </section>
+        <div className={styles.vid}>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="/bg-1.jpg"
+          >
+            <source src="/nuevo-vid.mp4" type="video/mp4" />
+            Tu navegador no soporta video en HTML5.
+          </video>
+        </div>
         <Image src="/bg-1.jpg" alt="image-hero" fill={true} />
       </section>
     </section>
