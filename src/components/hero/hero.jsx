@@ -52,13 +52,13 @@ export default function Hero({ id }) {
               <Image src="/bg-1.jpg" alt="img-opcion" fill={true} />
             </button>
             <button>
-              <Image src="/bg-1.jpg" alt="img-opcion" fill={true} />
+              <Image src="/bg-2.jpg" alt="img-opcion" fill={true} />
             </button>
             <button>
-              <Image src="/bg-1.jpg" alt="img-opcion" fill={true} />
+              <Image src="/bg-3.jpg" alt="img-opcion" fill={true} />
             </button>
             <button>
-              <Image src="/bg-1.jpg" alt="img-opcion" fill={true} />
+              <Image src="/bg-4.jpg" alt="img-opcion" fill={true} />
             </button>
           </section>
         </section>

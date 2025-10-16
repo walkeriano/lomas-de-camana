@@ -119,14 +119,14 @@ export default function Terreno({ id }) {
               <Image src="/bg-1.jpg" alt="img-opcion" fill={true} />
             </button>
             <button>
-              <Image src="/bg-1.jpg" alt="img-opcion" fill={true} />
+              <Image src="/bg-2.jpg" alt="img-opcion" fill={true} />
             </button>
             <button>
-              <Image src="/bg-1.jpg" alt="img-opcion" fill={true} />
+              <Image src="/bg-3.jpg" alt="img-opcion" fill={true} />
             </button>
           </section>
         </section>
-        <Image src="/bg-2.jpg" alt="image-hero" fill={true} />
+        <Image src="/pic-bg-3.png" alt="image-hero" fill={true} />
       </section>
     </section>
   );

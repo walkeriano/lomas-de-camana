@@ -7,7 +7,6 @@ import { faSchoolFlag, faPlaneDeparture, faChevronDown,faStore, faMapLocationDot
 export default function Beneficios({ id }) {
     const [show, setShow] = useState(true);
 
-
   return (
     <section id={id} className={styles.generalHero}>
       <section className={styles.titleHero}>
@@ -103,7 +102,19 @@ export default function Beneficios({ id }) {
             </button>
           </section>
         </section>
-        <Image src="/bg-1.jpg" alt="image-hero" fill={true} />
+        <div className={styles.vid}>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="/bg-1.jpg"
+          >
+            <source src="/nuevo-vid-6.mp4" type="video/mp4" />
+            Tu navegador no soporta video en HTML5.
+          </video>
+        </div>
+        <Image src="/pic-bg-2.png" alt="image-hero" fill={true} />
       </section>
     </section>
   );
