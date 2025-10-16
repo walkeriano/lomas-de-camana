@@ -152,7 +152,7 @@
 
 }
 
-.flexOptions button {
+.flexOptions .boxImage {
   width: 110px;
   height: 75px;
   display: flex;
@@ -166,14 +166,14 @@
   filter: drop-shadow(7px 7px 5px #131313d2);
 }
 
-.btnImage button img {
+.btnImage .boxImage .thumbVideo {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
 }
 
-.flexOptions button:hover {
+.flexOptions .boxImage:hover {
   border: 1px solid white;
 }
 
