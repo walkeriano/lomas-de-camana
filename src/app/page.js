@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import React, { useState, useEffect } from "react";
 import styles from "./page.module.css";
 import Head from "next/head";
 import Navegation from "@/components/navegation/navegation";
@@ -8,8 +8,19 @@ import Terreno from "@/components/terreno/terreno";
 import Beneficios from "@/components/beneficios/beneficios";
 import Ubicacion from "@/components/ubicacion/ubicacion";
 import Compra from "@/components/compra/compra";
+import Loading from "@/components/loading/loading";
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3300);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <Head>
@@ -48,12 +59,18 @@ export default function Home() {
         />
       </Head>
       <main className={styles.main}>
-        <Navegation />
-        <Hero id="hero" />
-        <Terreno id="terreno" />
-        <Beneficios id="beneficios" />
-        <Ubicacion id="ubicacion" />
-        <Compra id="compra" />
+        {loading ? (
+          <Loading />
+        ) : (
+          <>
+            <Navegation />
+            <Hero id="hero" />
+            <Terreno id="terreno" />
+            <Beneficios id="beneficios" />
+            <Ubicacion id="ubicacion" />
+            <Compra id="compra" />
+          </>
+        )}
       </main>
     </>
   );

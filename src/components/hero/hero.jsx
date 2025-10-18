@@ -96,7 +96,6 @@ export default function Hero({ id }) {
             Tu navegador no soporta video en HTML5.
           </video>
         </div>
-        <Image src="/bg-1.jpg" alt="image-hero" fill={true} />
       </section>
     </section>
   );

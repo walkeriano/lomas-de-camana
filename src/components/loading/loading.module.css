@@ -1,0 +1,56 @@
+.contLoading {
+  width: 100svw;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
+}
+
+.logo {
+  margin: 5%;
+  z-index: 1;
+}
+
+.contImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  height: 45px;
+  width: 100%;
+  --c: no-repeat linear-gradient(#ffffff 0 0);
+  background: var(--c), var(--c), #ffffff36;
+  background-size: 60% 100%;
+  animation: l16 7s infinite;
+  border: 1px solid white;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+.loader p {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.9rem;
+  margin-right: 55px;
+}
+
+@keyframes l16 {
+  0% {
+    background-position: -150% 0, -150% 0;
+  }
+  66% {
+    background-position: 250% 0, -150% 0;
+  }
+  100% {
+    background-position: 250% 0, 250% 0;
+  }
+}
