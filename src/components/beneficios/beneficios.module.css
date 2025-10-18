@@ -29,40 +29,20 @@
   justify-content: center;
 }
 
+.bgHero::after {
+  content: "";
+  width: 50vw;
+  height: 100vh;
+  background: linear-gradient(to Left, rgba(40, 40, 40, 0.607), rgba(0, 0, 0, 0));
+  z-index: 500;
+  right: 0px;
+    position: absolute;
+}
+
 .bgHero img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.btnImage {
-  position: absolute;
-  z-index: 1;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  bottom: 50px;
-  right: 50px;
-  gap: 15px;
-  flex-direction: column;
-}
-
-.btnImage div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.btnImage div p {
-  color: white;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-}
-
-.btnImage div .icon {
-  color: white;
-  font-size: 1rem;
 }
 
 .flexOptions {
@@ -86,12 +66,6 @@
   filter: drop-shadow(7px 7px 5px #131313d2);
 }
 
-.btnImage button img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-}
 
 .flexOptions button:hover {
   border: 1px solid white;
@@ -106,7 +80,7 @@
 
 .flexTitle h3 {
   color: white;
-  font-size: 1.3rem;
+  font-size: 2.2vw;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
@@ -177,6 +151,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.btnActive{
+  display: none;
 }
 
 @media (max-width: 1000px) {
@@ -253,20 +231,6 @@
     text-align: left;
   }
 
-  .btnImage {
-    bottom: 150px;
-    right: 5%;
-  }
-
-  .btnImage div {
-    width: 120px;
-    align-items: flex-end;
-  }
-
-  .btnImage div p {
-    text-align: right;
-  }
-
   .flexOptions {
     flex-direction: column;
     gap: 10px;
@@ -308,16 +272,6 @@
   .flexOptions button {
     width: 90px;
     height: 50px;
-  }
-
-  .btnImage div p {
-    text-align: right;
-    font-size: 0.8rem;
-    letter-spacing: 1.5px;
-  }
-
-  .btnImage {
-    bottom: 110px;
   }
 
   .containerItems {

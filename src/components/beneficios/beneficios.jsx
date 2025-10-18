@@ -11,15 +11,15 @@ export default function Beneficios({ id }) {
     <section id={id} className={styles.generalHero}>
       <section className={styles.titleHero}>
         <div className={styles.logoNav}>
-          <Image
-            src="/logo-lomas.png"
-            alt="imagen-general"
-            width={200}
-            height={80}
-          />
+           <Image
+             src="/logo-lomas.png"
+             alt="imagen-general"
+             width={200}
+             height={110}
+           />
         </div>
         <div className={styles.flexTitle}>
-          <h3>Grandes beneficios</h3>
+          <h3>grandes beneficios</h3>
           <FontAwesomeIcon icon={faChevronDown} className={styles.icon} />
         </div>
         <section className={styles.containerItems}>
@@ -85,23 +85,6 @@ export default function Beneficios({ id }) {
         )}
       </section>
       <section className={styles.bgHero}>
-        <section className={styles.btnImage}>
-          <div>
-            <p>Vistas generales</p>
-            <FontAwesomeIcon icon={faChevronDown} className={styles.icon} />
-          </div>
-          <section className={styles.flexOptions}>
-            <button>
-              <Image src="/bg-1.jpg" alt="img-opcion" fill={true} />
-            </button>
-            <button>
-              <Image src="/bg-1.jpg" alt="img-opcion" fill={true} />
-            </button>
-            <button>
-              <Image src="/bg-1.jpg" alt="img-opcion" fill={true} />
-            </button>
-          </section>
-        </section>
         <div className={styles.vid}>
           <video
             autoPlay
@@ -114,7 +97,6 @@ export default function Beneficios({ id }) {
             Tu navegador no soporta video en HTML5.
           </video>
         </div>
-        <Image src="/pic-bg-2.png" alt="image-hero" fill={true} />
       </section>
     </section>
   );

@@ -21,14 +21,13 @@ export default function Hero({ id }) {
 
   return (
     <section id={id} className={styles.generalHero}>
-      {/* ---------- TÍTULO Y BOTONES ---------- */}
       <section className={styles.titleHero}>
         <div className={styles.logoNav}>
           <Image
             src="/logo-lomas.png"
             alt="imagen-general"
             width={200}
-            height={80}
+            height={110}
           />
         </div>
 
@@ -41,7 +40,7 @@ export default function Hero({ id }) {
         <section className={styles.flexButton}>
           <button>
             <div>
-              <h3>Certificados en Regla</h3>
+              <h3>Certificación</h3>
               <p>Abrir</p>
             </div>
             <FontAwesomeIcon icon={faNewspaper} className={styles.icon} />
@@ -57,15 +56,12 @@ export default function Hero({ id }) {
         </section>
       </section>
 
-      {/* ---------- SECCIÓN DE VIDEO PRINCIPAL ---------- */}
       <section className={styles.bgHero}>
         <section className={styles.btnImage}>
           <div>
             <p>Vistas generales</p>
             <FontAwesomeIcon icon={faChevronDown} className={styles.icon} />
           </div>
-
-          {/* MINIATURAS DE VIDEOS */}
           <section className={styles.flexOptions}>
             {videoCards.map((vid, index) => (
               <button
@@ -87,8 +83,6 @@ export default function Hero({ id }) {
             ))}
           </section>
         </section>
-
-        {/* VIDEO PRINCIPAL (se recrea al cambiar el estado) */}
         <div className={styles.vid}>
           <video
             key={selectedCard}
@@ -102,8 +96,6 @@ export default function Hero({ id }) {
             Tu navegador no soporta video en HTML5.
           </video>
         </div>
-
-        {/* IMAGEN DE BACKGROUND OPCIONAL */}
         <Image src="/bg-1.jpg" alt="image-hero" fill={true} />
       </section>
     </section>

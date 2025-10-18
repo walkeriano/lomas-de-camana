@@ -20,7 +20,7 @@ export default function Compra({ id }) {
             src="/logo-lomas.png"
             alt="imagen-general"
             width={200}
-            height={80}
+            height={110}
           />
         </div>
         <h2>
@@ -31,7 +31,7 @@ export default function Compra({ id }) {
         <section className={styles.flexButton}>
           <button>
             <div>
-              <h3>Certificados en Regla</h3>
+              <h3>Certificación</h3>
               <p>Abrir</p>
             </div>
             <FontAwesomeIcon icon={faNewspaper} className={styles.icon} />
@@ -54,7 +54,7 @@ export default function Compra({ id }) {
           <form action="" className={styles.formContact}>
             <label htmlFor="">
               <FontAwesomeIcon icon={faUser} className={styles.icon} />
-              <input type="text" placeholder="Nombres..." />
+              <input type="text" placeholder="Nombre completo..." />
             </label>
             <label htmlFor="">
               <FontAwesomeIcon icon={faPhoneVolume} className={styles.icon} />
@@ -65,7 +65,7 @@ export default function Compra({ id }) {
               <input type="email" placeholder="Correo de contacto..." />
             </label>
             <button type="submit">
-              enviar
+              Reservar
               <FontAwesomeIcon icon={faPaperPlane} className={styles.icon} />
             </button>
           </form>
