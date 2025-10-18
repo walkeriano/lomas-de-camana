@@ -23,8 +23,8 @@ const lato = Lato({
 });
 
 export const metadata = {
-  title: "Lomas de camana - Terreno en venta",
-  description: "Lomas de camana - Terreno listo para la compra en Arequipa, Perú",
+  title: "Valle de Quilva Club House - Terreno en venta",
+  description: "Valle de Quilva Club House - Terreno listo para la compra en Arequipa, Perú",
 };
 
 export default function RootLayout({ children }) {

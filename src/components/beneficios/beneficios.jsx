@@ -25,27 +25,33 @@ export default function Beneficios({ id }) {
         <section className={styles.containerItems}>
           <section className={styles.itemDato}>
             <div>
-              <h4>10 min del centro</h4>
+              <h4>Terreno con zonificación residencial densidad media, listo para desarrollar.</h4>
             </div>
             <FontAwesomeIcon icon={faMapLocationDot} className={styles.icon} />
           </section>
           <section className={styles.itemDato}>
             <div>
-              <h4>centros comerciales</h4>
+              <h4>Fácil acceso a luz y agua.</h4>
             </div>
             <FontAwesomeIcon icon={faStore} className={styles.icon} />
           </section>
           <section className={styles.itemDato}>
             <div>
-              <h4>Instituciones educativas</h4>
+              <h4>Hermosa vista al mar, valle y río.</h4>
             </div>
             <FontAwesomeIcon icon={faSchoolFlag} className={styles.icon} />
           </section>
           <section className={styles.itemDato}>
             <div>
-              <h4>5km del aereopuerto</h4>
+              <h4>Vías terrestres directas</h4>
             </div>
             <FontAwesomeIcon icon={faPlaneDeparture} className={styles.icon} />
+          </section>
+          <section className={styles.itemDato}>
+            <div>
+              <h4>⁠Rodeado de grandes proyectos.</h4>
+            </div>
+            <FontAwesomeIcon icon={faSchoolFlag} className={styles.icon} />
           </section>
           
         </section>
