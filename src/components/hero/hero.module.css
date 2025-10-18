@@ -40,7 +40,7 @@
   gap: 20px;
 }
 
-.flexButton button {
+.flexButton a {
   padding: 10px 15px;
   background-color: rgba(0, 0, 0, 0.176);
   border: 1px solid rgba(255, 255, 255, 0.433);
@@ -51,23 +51,24 @@
   backdrop-filter: blur(5px);
   gap: 10px;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.flexButton button:hover {
+.flexButton a:hover {
   background-color: white;
   border-color: white;
 }
 
-.flexButton button .icon {
+.flexButton a .icon {
   font-size: 2.3rem;
   color: white;
 }
 
-.flexButton button:hover .icon {
+.flexButton a:hover .icon {
   color: green;
 }
 
-.flexButton button div {
+.flexButton a div {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -75,7 +76,7 @@
   gap: 5px;
 }
 
-.flexButton button div h3 {
+.flexButton a div h3 {
   color: white;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -83,7 +84,7 @@
   font-weight: 700;
 }
 
-.flexButton button div p {
+.flexButton a div p {
   font-size: 0.8rem;
   text-transform: uppercase;
   color: white;
@@ -91,8 +92,8 @@
   letter-spacing: 1px;
 }
 
-.flexButton button:hover div h3,
-.flexButton button:hover div p {
+.flexButton a:hover div h3,
+.flexButton a:hover div p {
   color: green;
   border-color: green;
 }
