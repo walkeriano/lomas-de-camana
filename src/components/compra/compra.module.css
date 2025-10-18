@@ -1,6 +1,6 @@
 .generalHero {
   width: 100vw;
-  height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,8 +113,8 @@
   height: 100vh;
   background: linear-gradient(
     to Left,
-    rgba(86, 86, 86, 0.607),
-    rgba(8, 96, 0, 0)
+    rgba(40, 40, 40, 0.462),
+    rgba(0, 0, 0, 0)
   );
   z-index: 500;
   right: 0px;
@@ -233,7 +233,7 @@
   font-size: 1rem;
 }
 
-.logoNav{
+.logoNav {
   display: none;
 }
 
@@ -279,7 +279,20 @@
 }
 
 @media (max-width: 800px) {
-    .titleHero {
+  .bgHero::after {
+    width: 55vw;
+    background: linear-gradient(
+      to Right,
+      rgba(40, 40, 40, 0.462),
+      rgba(0, 0, 0, 0)
+    );
+    z-index: 500;
+    right: auto;
+    left: 0px;
+    height: 100%;
+  }
+
+  .titleHero {
     top: 20px;
     left: 0%;
   }
@@ -288,7 +301,6 @@
     font-size: 7vw;
     margin-left: 5%;
   }
-
 
   .generalHero {
     height: auto;

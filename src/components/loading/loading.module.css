@@ -1,6 +1,6 @@
 .contLoading {
-  width: 100svw;
-  height: 100svh;
+  width: 100vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

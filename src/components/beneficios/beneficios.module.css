@@ -1,6 +1,6 @@
 .generalHero {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,10 +33,14 @@
   content: "";
   width: 50vw;
   height: 100vh;
-  background: linear-gradient(to Left, rgba(40, 40, 40, 0.607), rgba(0, 0, 0, 0));
+  background: linear-gradient(
+    to Left,
+    rgba(40, 40, 40, 0.462),
+    rgba(0, 0, 0, 0)
+  );
   z-index: 500;
   right: 0px;
-    position: absolute;
+  position: absolute;
 }
 
 .bgHero img {
@@ -65,7 +69,6 @@
   background-color: transparent;
   filter: drop-shadow(7px 7px 5px #131313d2);
 }
-
 
 .flexOptions button:hover {
   border: 1px solid white;
@@ -140,20 +143,20 @@
   display: none;
 }
 
-.vid{
+.vid {
   width: 100vw;
   height: 100vh;
   z-index: 1;
   position: relative;
 }
 
-.vid video{
+.vid video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.btnActive{
+.btnActive {
   display: none;
 }
 
@@ -243,8 +246,7 @@
 }
 
 @media (max-width: 800px) {
-
-    .bgHero::after {
+  .bgHero::after {
     width: 55vw;
     background: linear-gradient(
       to Right,
@@ -256,7 +258,6 @@
     left: 0px;
   }
 
-  
   .btnActive {
     display: flex;
     font-size: 0.8rem;

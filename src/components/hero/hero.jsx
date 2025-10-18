@@ -97,7 +97,7 @@ export default function Hero({ id }) {
             loop
             muted
             playsInline
-            poster="/bg-1.jpg"
+            poster="/pic-big-4.jpg"
           >
             <source src={selectedCard} type="video/mp4" />
             Tu navegador no soporta video en HTML5.
