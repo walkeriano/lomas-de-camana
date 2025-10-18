@@ -231,11 +231,6 @@
   .titleHero h1 {
     font-size: 8.8vw;
     text-align: left;
-    font-weight: 300;
-  }
-
-  .titleHero h1 span {
-    font-weight: 700;
   }
 
   .btnImage {
@@ -257,28 +252,28 @@
     gap: 10px;
   }
 
-  .flexOptions button {
+  .flexOptions .boxImage {
     width: 100px;
     height: 60px;
   }
 
-  .flexButton button {
+  .flexButton a {
     padding: 10px 10px;
   }
 
-  .flexButton button .icon {
+  .flexButton a .icon {
     font-size: 1.8rem;
   }
 
-  .flexButton button div {
+  .flexButton a div {
     align-items: flex-start;
   }
 
-  .flexButton button div h3 {
+  .flexButton a div h3 {
     font-size: 0.8rem;
   }
 
-  .flexButton button div p {
+  .flexButton a div p {
     font-size: 0.7rem;
   }
 
@@ -291,37 +286,79 @@
 }
 
 @media (max-width: 800px) {
+
+  .logoNav img{
+    margin-left: 5%;
+  }
+  .titleHero {
+    top: 20px;
+    left: 0%;
+  }
+
+  .titleHero h1 {
+    font-size: 7vw;
+    margin-left: 5%;
+  }
+
+  .bgHero::after {
+    width: 55vw;
+    background: linear-gradient(
+      to Right,
+      rgba(40, 40, 40, 0.462),
+      rgba(0, 0, 0, 0)
+    );
+    z-index: 500;
+    right: auto;
+    left: 0px;
+  }
+
   .flexButton {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
 
-  .flexButton button {
+  .flexButton a {
     flex-direction: row-reverse;
     padding: 10px 10px;
+    border-radius: 0px 10px 10px 0px;
+    border-left: 0px;
   }
 
-  .flexButton button .icon {
-    font-size: 1.6rem;
+  .flexButton a .icon {
+    font-size: 1.5rem;
   }
 
-  .flexButton button div h3 {
+  .flexButton a div h3 {
     font-size: 0.7rem;
     text-align: left;
   }
 
-  .flexButton button div p {
-    font-size: 0.6rem;
+  .flexButton a div p {
+    font-size: 0.5rem;
   }
 
   .flexOptions {
     gap: 15px;
   }
 
-  .flexOptions button {
+  .flexOptions .boxImage {
     width: 90px;
     height: 50px;
+    border-radius: 15px 0px 0px 15px;
+  }
+
+  .flexOptions .boxImage .thumbVideo{
+    border-radius: 15px 0px 0px 15px;
+  }
+
+  .btnImage {
+    right: 0px;
+    bottom: 110px;
+  }
+
+  .btnImage div{
+    margin-right: 10px;
   }
 
   .btnImage div p {
@@ -330,7 +367,5 @@
     letter-spacing: 1.5px;
   }
 
-  .btnImage {
-    bottom: 110px;
-  }
+  
 }

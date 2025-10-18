@@ -20,8 +20,8 @@ export default function Terreno({ id }) {
           <Image
             src="/logo-lomas.png"
             alt="imagen-general"
-            width={200}
-            height={110}
+            width={120}
+            height={65}
           />
         </div>
         <div className={styles.flexTitle}>
@@ -32,7 +32,7 @@ export default function Terreno({ id }) {
           <section className={styles.itemDato}>
             <div>
               <p>Ubicación</p>
-              <h4>Av. General 349, Arequipa, Perú.</h4>
+              <h4>Quilca - Camaná, Arequipa Perú.</h4>
             </div>
             <FontAwesomeIcon
               icon={faLocationCrosshairs}
@@ -42,7 +42,7 @@ export default function Terreno({ id }) {
           <section className={styles.itemDato}>
             <div>
               <p>Dimensiones</p>
-              <h4>300 m2</h4>
+              <h4>9.61 Ha</h4>
             </div>
             <FontAwesomeIcon icon={faExpand} className={styles.icon} />
           </section>
@@ -55,21 +55,23 @@ export default function Terreno({ id }) {
           </section>
           <section className={styles.itemDato}>
             <div>
-              <p>Longitud</p>
-              <h4>78657465º</h4>
+              <p>Perimetro</p>
+              <h4>1882.58 ml</h4>
             </div>
             <FontAwesomeIcon icon={faEarthAmericas} className={styles.icon} />
           </section>
         </section>
         {show ? (
-          <button onClick={()=>setShow(false)} className={styles.btnActive}>ver detalles</button>
+          <button onClick={() => setShow(false)} className={styles.btnActive}>
+            ver detalles
+          </button>
         ) : (
           <>
             <section className={styles.containerItemsTwo}>
               <section className={styles.itemDato}>
                 <div>
                   <p>Ubicación</p>
-                  <h4>Av. General 349, Arequipa, Perú.</h4>
+                  <h4>Quilca - Camaná, Arequipa Perú.</h4>
                 </div>
                 <FontAwesomeIcon
                   icon={faLocationCrosshairs}
@@ -79,7 +81,7 @@ export default function Terreno({ id }) {
               <section className={styles.itemDato}>
                 <div>
                   <p>Dimensiones</p>
-                  <h4>300 m2</h4>
+                  <h4>9.61 Ha</h4>
                 </div>
                 <FontAwesomeIcon icon={faExpand} className={styles.icon} />
               </section>
@@ -95,8 +97,8 @@ export default function Terreno({ id }) {
               </section>
               <section className={styles.itemDato}>
                 <div>
-                  <p>Longitud</p>
-                  <h4>78657465º</h4>
+                  <p>Perimetro</p>
+                  <h4>1882.58 ml</h4>
                 </div>
                 <FontAwesomeIcon
                   icon={faEarthAmericas}
@@ -104,28 +106,13 @@ export default function Terreno({ id }) {
                 />
               </section>
             </section>
-            <button  onClick={()=>setShow(true)} className={styles.btnActive}>ocultar</button>
+            <button onClick={() => setShow(true)} className={styles.btnActive}>
+              ocultar
+            </button>
           </>
         )}
       </section>
       <section className={styles.bgHero}>
-        <section className={styles.btnImage}>
-          <div>
-            <p>Vistas generales</p>
-            <FontAwesomeIcon icon={faChevronDown} className={styles.icon} />
-          </div>
-          <section className={styles.flexOptions}>
-            <button>
-              <Image src="/bg-1.jpg" alt="img-opcion" fill={true} />
-            </button>
-            <button>
-              <Image src="/bg-2.jpg" alt="img-opcion" fill={true} />
-            </button>
-            <button>
-              <Image src="/bg-3.jpg" alt="img-opcion" fill={true} />
-            </button>
-          </section>
-        </section>
         <Image src="/pic-bg-3.png" alt="image-hero" fill={true} />
       </section>
     </section>

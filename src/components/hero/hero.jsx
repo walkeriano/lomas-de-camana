@@ -5,8 +5,9 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faNewspaper,
-  faShieldHalved,
   faChevronDown,
+    faEarthAmericas,
+    faMapLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
@@ -27,17 +28,15 @@ export default function Hero({ id }) {
           <Image
             src="/logo-lomas.png"
             alt="imagen-general"
-            width={200}
-            height={110}
+            width={120}
+            height={65}
           />
         </div>
-
         <h1>
           Venta segura
           <br />
           <span>e inmediata</span>
         </h1>
-
         <section className={styles.flexButton}>
           <Link href="https://firebasestorage.googleapis.com/v0/b/big-barden.appspot.com/o/documents%2F1.-PERIMETRO.pdf?alt=media&token=ba861e42-5139-449b-b5c0-1228b886ffce" target="_blank" >
             <div>
@@ -52,14 +51,14 @@ export default function Hero({ id }) {
               <h3>Planos</h3>
               <p>Abrir</p>
             </div>
-            <FontAwesomeIcon icon={faNewspaper} className={styles.icon} />
+            <FontAwesomeIcon icon={faEarthAmericas} className={styles.icon} />
           </Link>
           <Link href="https://firebasestorage.googleapis.com/v0/b/big-barden.appspot.com/o/documents%2FCERTIFICADO%20DE%20PARAMETROS%20Y%20ZONIFICACION.pdf?alt=media&token=ad86dac9-f6f5-4878-8343-910e1f2411f1" target="_blank">
             <div>
               <h3>perimetro</h3>
               <p>Abrir</p>
             </div>
-            <FontAwesomeIcon icon={faShieldHalved} className={styles.icon} />
+            <FontAwesomeIcon icon={faMapLocationDot} className={styles.icon} />
           </Link>
         </section>
       </section>

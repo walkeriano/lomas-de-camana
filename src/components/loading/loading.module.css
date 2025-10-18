@@ -54,3 +54,18 @@
     background-position: 250% 0, 250% 0;
   }
 }
+
+@media (max-width: 800px) {
+  .logo {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    width: 250px;
+    height: 130px;
+  }
+
+  .loader{
+    position: absolute;
+    bottom: 0px;
+  }
+}
