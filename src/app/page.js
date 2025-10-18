@@ -27,8 +27,7 @@ export default function Home() {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>
-          SB - Consultores Corporativos - Asesoría y Consultoría Corporativa
-          legal
+          Valle de Quilca Club House - Terreno listo para la compra en Arequipa, Perú
         </title>
         <meta
           name="description"
