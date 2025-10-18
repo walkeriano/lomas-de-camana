@@ -85,6 +85,7 @@ export default function Hero({ id }) {
                   loop
                   playsInline
                   className={styles.thumbVideo}
+                  poster="/pic-big-4.jpg"
                 />
               </button>
             ))}

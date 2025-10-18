@@ -1,6 +1,6 @@
 .generalHero {
   width: 100vw;
-  min-height: auto;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -279,6 +279,11 @@
 }
 
 @media (max-width: 800px) {
+    .generalHero {
+    min-height: auto;
+  }
+
+
   .bgHero::after {
     width: 55vw;
     background: linear-gradient(
@@ -300,10 +305,6 @@
   .titleHero h2 {
     font-size: 7vw;
     margin-left: 5%;
-  }
-
-  .generalHero {
-    height: auto;
   }
 
   .btnImage {

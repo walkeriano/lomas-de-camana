@@ -118,7 +118,7 @@ export default function Beneficios({ id }) {
       </section>
       <section className={styles.bgHero}>
         <div className={styles.vid}>
-          <video autoPlay loop muted playsInline poster="/pic-big-4.jpg">
+          <video autoPlay loop muted playsInline poster="/pic-big-5.jpg">
             <source src="/nuevo-vid-6.mp4" type="video/mp4" />
             Tu navegador no soporta video en HTML5.
           </video>

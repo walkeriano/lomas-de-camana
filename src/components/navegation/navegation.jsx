@@ -56,18 +56,27 @@ export default function Navegation() {
         </button>
       </section>
       <section className={styles.contactChannels}>
-        <Link href="/" className={styles.btnContact}>
+        <Link
+          href="https://wa.me/51983552696?text=Hola%20quiero%20reservar%20una%20visita"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.btnContact}
+        >
           reservar visita
           <FontAwesomeIcon icon={faArrowRight} className={styles.icon} />
         </Link>
         <div className={styles.flexButton}>
-          <Link href="/">
+          <Link
+            href="https://wa.me/51983552696?text=Hola%20quiero%20reservar%20una%20visita"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faWhatsapp} className={styles.icon} />
           </Link>
-          <Link href="/">
+          <Link href="tel:+51983552696">
             <FontAwesomeIcon icon={faPhoneVolume} className={styles.icon} />
           </Link>
-          <Link href="/">
+          <Link href="mailto: rafaelgonzales320@gmail.com">
             <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
           </Link>
         </div>
