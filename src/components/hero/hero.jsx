@@ -38,7 +38,7 @@ export default function Hero({ id }) {
           <span>e inmediata</span>
         </h1>
         <section className={styles.flexButton}>
-          <Link href="https://firebasestorage.googleapis.com/v0/b/big-barden.appspot.com/o/documents%2F1.-PERIMETRO.pdf?alt=media&token=ba861e42-5139-449b-b5c0-1228b886ffce" target="_blank" >
+          <Link href="https://firebasestorage.googleapis.com/v0/b/big-barden.appspot.com/o/documents%2FCERTIFICADO%20DE%20PARAMETROS%20Y%20ZONIFICACION.pdf?alt=media&token=ad86dac9-f6f5-4878-8343-910e1f2411f1"  target="_blank" >
             <div>
               <h3>Certificación</h3>
               <p>Abrir</p>
@@ -53,7 +53,7 @@ export default function Hero({ id }) {
             </div>
             <FontAwesomeIcon icon={faEarthAmericas} className={styles.icon} />
           </Link>
-          <Link href="https://firebasestorage.googleapis.com/v0/b/big-barden.appspot.com/o/documents%2FCERTIFICADO%20DE%20PARAMETROS%20Y%20ZONIFICACION.pdf?alt=media&token=ad86dac9-f6f5-4878-8343-910e1f2411f1" target="_blank">
+          <Link href="https://firebasestorage.googleapis.com/v0/b/big-barden.appspot.com/o/documents%2F1.-PERIMETRO.pdf?alt=media&token=ba861e42-5139-449b-b5c0-1228b886ffce"  target="_blank">
             <div>
               <h3>perimetro</h3>
               <p>Abrir</p>
