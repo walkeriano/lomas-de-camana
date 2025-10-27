@@ -29,8 +29,8 @@ export default function Navegation() {
         <Image
           src="/logo-lomas.png"
           alt="imagen-general"
-          width={210}
-          height={115}
+          width={175}
+          height={120}
         />
       </div>
       <section className={styles.containerNavigation}>

@@ -23,7 +23,7 @@ export default function IntroVideo() {
                 allowFullScreen
               ></iframe>
             </div>
-            <button onClick={()=> setVideoShow(false)}>
+            <button onClick={() => setVideoShow(false)}>
               comenzar
               <FontAwesomeIcon icon={faPaperPlane} className={styles.icon} />
             </button>

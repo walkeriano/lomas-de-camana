@@ -47,7 +47,7 @@
 
 .containerNavigation button p {
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 1vw;
   letter-spacing: 1.5px;
   color: white;
   font-weight: 400;
@@ -78,8 +78,7 @@
 
 .btnContact {
   background-color: white;
-  height: 50px;
-  padding: 0px 15px;
+  padding: 10px 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,7 +117,7 @@
 }
 
 .flexButton a {
-  width: 50px;
+  width: 45px;
   aspect-ratio: 1;
   background-color: white;
   border-radius: 50%;
@@ -130,11 +129,11 @@
 }
 
 .flexButton a .icon {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .flexButton a:nth-child(1) .icon {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .flexButton a:hover {
@@ -152,7 +151,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 10%;
 }
 
 @media (max-width: 1000px) {
