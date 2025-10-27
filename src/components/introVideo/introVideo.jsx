@@ -15,7 +15,7 @@ export default function IntroVideo() {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/KpXNzbDkG3Q?si=gN3rHqfYe9UJql-R"
+                src="https://www.youtube.com/embed/HU3KiH4iyAw?si=MwTNosDZ0mfADHvf"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
