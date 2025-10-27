@@ -29,7 +29,7 @@ export default function Hero({ id }) {
             src="/logo-lomas.png"
             alt="imagen-general"
             width={120}
-            height={65}
+            height={85}
           />
         </div>
         <h1>

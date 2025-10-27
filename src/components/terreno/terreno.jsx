@@ -21,7 +21,7 @@ export default function Terreno({ id }) {
             src="/logo-lomas.png"
             alt="imagen-general"
             width={120}
-            height={65}
+            height={85}
           />
         </div>
         <div className={styles.flexTitle}>

@@ -7,7 +7,7 @@ export default function Loading() {
       <Image
         src="/logo-lomas.png"
         alt="logo-sb-legal"
-        width={350}
+        width={265}
         height={175}
          className={styles.logo}
       />

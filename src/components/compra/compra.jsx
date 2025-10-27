@@ -21,8 +21,8 @@ export default function Compra({ id }) {
           <Image
             src="/logo-lomas.png"
             alt="imagen-general"
-            width={200}
-            height={110}
+            width={120}
+            height={85}
           />
         </div>
         <h2>
