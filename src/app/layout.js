@@ -23,8 +23,8 @@ const lato = Lato({
 });
 
 export const metadata = {
-  title: "Valle de Quilca Club House - Terreno en venta",
-  description: "Valle de Quilca Club House - Terreno listo para la compra en Arequipa, Perú",
+  title: "Condominio Club House Valle de Quilca",
+  description: "Condominio Club House Valle de Quilca",
 };
 
 export default function RootLayout({ children }) {

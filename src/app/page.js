@@ -9,6 +9,7 @@ import Beneficios from "@/components/beneficios/beneficios";
 import Ubicacion from "@/components/ubicacion/ubicacion";
 import Compra from "@/components/compra/compra";
 import Loading from "@/components/loading/loading";
+import IntroVideo from "@/components/introVideo/introVideo";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -26,9 +27,7 @@ export default function Home() {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-          Valle de Quilca Club House - Terreno listo para la compra en Arequipa, Perú
-        </title>
+        <title>Condominio Club House Valle de Quilca</title>
         <meta
           name="description"
           content="Soluciones corporativas y jurídicas de la más alta calidad. Nos dedicamos a comprender a fondo los desafíos de su negocio para brindar un asesoramiento estratégico y proactivo que no solo resuelve problemas, sino que también previene riesgos y optimiza el crecimiento."
@@ -62,6 +61,7 @@ export default function Home() {
           <Loading />
         ) : (
           <>
+            <IntroVideo />
             <Navegation />
             <Hero id="hero" />
             <Terreno id="terreno" />

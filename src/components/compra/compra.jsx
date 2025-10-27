@@ -88,7 +88,7 @@ export default function Compra({ id }) {
             </button>
           </form>
         </section>
-        <Image src="/pic-bg-1.png" alt="image-hero" fill={true} />
+        <Image src="/pic-bg-4.png" alt="image-hero" fill={true} />
       </section>
     </section>
   );
